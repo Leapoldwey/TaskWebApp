@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Task Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" th:href="@{/index}">Task Management System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav">
+                    <li th:if="${#httpServletRequest.userPrincipal == null}" class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/aboutApp}">О нас</a>
+                    </li>
+                    <li th:if="${#httpServletRequest.userPrincipal == null}" class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/login}">Войти</a>
+                    </li>
+                    <li th:if="${#httpServletRequest.userPrincipal == null}" class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/registration}">Регистрация</a>
+                    </li>
+                    <li th:if="${#httpServletRequest.userPrincipal != null}" class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/aboutApp}">О нас</a>
+                    </li>
+                    <li th:if="${#httpServletRequest.userPrincipal != null}" class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/list}">Задачи</a>
+                    </li>
+                    <li th:if="${#httpServletRequest.userPrincipal != null}" class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/list/releases}">Релизы</a>
+                    </li>
+                    <li th:if="${#httpServletRequest.userPrincipal != null}" class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/users}">Пользователи</a>
+                    </li>
+                    <li th:if="${#httpServletRequest.userPrincipal != null}" class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/remainingTimeForm}">Калькулятор
+                            дней</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent1">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li th:if="${#httpServletRequest.userPrincipal != null}" class="nav-item">
+                    <span class="nav-link active" aria-current="page" th:text="${#authentication.name}"></span>
+                </li>
+                <li th:if="${#httpServletRequest.userPrincipal != null}" class="nav-item">
+                    <a class="nav-link active" aria-current="page" th:href="@{/logout}">Выход</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+
+    <hr/>
+    <a th:href="@{/addTaskForm}" class="btn btn-primary">Добавить задачу</a>
+    <br/><br/>
+    <table class="table table-bordered table-striped" id="TaskTable">
+
+        <thead>
+        <tr>
+            <th>Релизы</th>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Приоритет</th>
+            <th>Дата создания</th>
+            <th>Дата окончания</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="task: ${tasks}">
+            <td>
+                <a th:href="@{/searchReleaseByTask(taskId=${task.id})}" class="btn btn-primary">Показать</a>
+                <a th:href="@{addReleaseForm(taskId=${task.id})}" class="btn btn-primary">Добавить</a>
+            </td>
+            <td th:text="${task.title}" />
+            <td th:text="${task.description}" />
+            <td th:text="${task.priority}" />
+            <td th:text="${task.createDate}" />
+            <td th:text="${task.deadLine}" />
+            <td>
+                <a th:href="@{/showUpdateTaskForm(taskId=${task.id})}" class="btn btn-info">Обновить</a>
+
+                <a th:href="@{/deleteTask(taskId=${task.id})}" class="btn btn-danger ml-2">Удалить</a>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.25/datatables.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#taskTable").DataTable({
+            'aoColumnDefs': [{
+                'bSortable': false,
+                'aTargets': [-1] /* 1st one, start by the right */
+            }]
+        });
+    })
+</script>
+</body></html>

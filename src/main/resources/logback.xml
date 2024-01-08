@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- Аппендер для записи в файл -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logback/mylogs.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Аппендер для вывода в консоль -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+<!--        <appender name="DB" class="ch.qos.logback.classic.db.DBAppender">-->
+<!--            <connectionSource-->
+<!--                    class="ch.qos.logback.core.db.DataSourceConnectionSource">-->
+<!--                <dataSource-->
+<!--                        class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+<!--                    <driverClass>org.h2.Driver</driverClass>-->
+<!--                    <jdbcUrl>jdbc:h2:/Users/User/IdeaProjects/TaskWeb/taskdb/tasks</jdbcUrl>-->
+<!--                </dataSource>-->
+<!--            </connectionSource>-->
+<!--        </appender>-->
+
+    <!-- Корневой элемент с двумя аппендерами -->
+    <root level="info">
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="CONSOLE"/>
+<!--        <appender-ref ref="DB"/>-->
+    </root>
+</configuration>
