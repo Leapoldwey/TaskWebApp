@@ -11,7 +11,12 @@ import java.time.LocalDateTime;
 @Service
 public class UserActionServiceIml implements UserActionService {
     @Autowired
-    private UserActionRepository userActionRepository;
+    private final UserActionRepository userActionRepository;
+
+    public UserActionServiceIml(UserActionRepository userActionRepository) {
+        this.userActionRepository = userActionRepository;
+    }
+
     public void writeLog(String action, Principal principal) {
         String userEmail = principal.getName();
         if (userEmail != null) {

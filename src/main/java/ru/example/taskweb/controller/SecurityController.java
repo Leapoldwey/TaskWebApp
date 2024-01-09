@@ -31,7 +31,7 @@ public class SecurityController {
 
 
     public SecurityController(UserService userService, UserActionService userActionService,
-                             UserActionRepository userActionRepository1) {
+                              UserActionRepository userActionRepository1) {
         this.userService = userService;
         this.userActionService = userActionService;
         this.userActionRepository = userActionRepository1;
@@ -41,6 +41,7 @@ public class SecurityController {
     public String home() {
         return "index";
     }
+
     @GetMapping("/aboutApp")
     public String about() {
         return "aboutApp";
@@ -99,20 +100,12 @@ public class SecurityController {
         log.info("Список всех пользователей");
         userActionService.writeLog("Список всех пользователей", principal);
 
-        User currencyUser = userService.findByEmail(principal.getName());
-        String roleAdmin = currencyUser.getRoles().stream()
-                .map(role -> role.getName())
-                .filter(nameRole -> nameRole.equals("ROLE_ADMIN"))
-                .findFirst()
-                .orElse("null");
-        if (roleAdmin.equals("ROLE_ADMIN")) {
-            List<Object> users = userService.findAllUsers();
+        List<Object> users = userService.findAllUsers();
 
-            model.addAttribute("users", users);
+        model.addAttribute("users", users);
 
-            return "users";
-        } else { model.addAttribute("error", "C");
-            return "redirect:/index";}
+        return "users";
+
 
     }
 
@@ -123,13 +116,12 @@ public class SecurityController {
     }
 
     @GetMapping("/addRoleAdmin")
-    public String addRoleAdmin(@RequestParam String userEmail, Principal principal, ModelAndView mav,
-                               BindingResult bindingResult) {
+    public String addRoleAdmin(@RequestParam String userEmail, Principal principal, ModelAndView mav) {
         log.info("Выдача роли \"ROLE_ADMIN\" {}", principal.getName());
         userActionService.writeLog("Выдача роли - \"ROLE_ADMIN\"", principal);
 
 
-        userService.giveAdminRole(userEmail, mav, bindingResult);
+        userService.giveAdminRole(userEmail, mav);
 
         log.info("Роль \"ROLE_ADMIN\" успешно выдана администратором {}", principal.getName());
         userActionService.writeLog("Роль \"ROLE_ADMIN\" успешно выдана администратором", principal);
@@ -137,12 +129,11 @@ public class SecurityController {
     }
 
     @GetMapping("/addRoleUser")
-    public String addRoleUser(@RequestParam String userEmail, Principal principal, ModelAndView mav,
-                              BindingResult bindingResult) {
+    public String addRoleUser(@RequestParam String userEmail, Principal principal, ModelAndView mav) {
         log.info("Выдача роли \"ROLE_USER\" {}", principal.getName());
         userActionService.writeLog("Выдача роли \"ROLE_USER\"", principal);
 
-        userService.giveUserRole(userEmail, mav, bindingResult);
+        userService.giveUserRole(userEmail, mav);
 
         log.info("Роль \"ROLE_USER\" успешно выдана администратором {}", principal.getName());
         userActionService.writeLog("Роль \"ROLE_USER\" успешно выдана администратором", principal);
@@ -150,12 +141,11 @@ public class SecurityController {
     }
 
     @GetMapping("/addRoleRead")
-    public String addRoleRead(@RequestParam String userEmail, Principal principal, ModelAndView mav,
-                              BindingResult bindingResult) {
+    public String addRoleRead(@RequestParam String userEmail, Principal principal, ModelAndView mav) {
         log.info("Выдача роли \"ROLE_READ\" {}", principal.getName());
         userActionService.writeLog("Выдача роли \"ROLE_READ\"", principal);
 
-        userService.giveReadRole(userEmail, mav, bindingResult);
+        userService.giveReadRole(userEmail, mav);
 
         log.info("Роль \"ROLE_READ\" успешно выдана администратором {}", principal.getName());
         userActionService.writeLog("Роль \"ROLE_READ\" успешно выдана администратором", principal);

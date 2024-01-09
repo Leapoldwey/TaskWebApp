@@ -1,0 +1,439 @@
+11:20:29.756 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+11:20:30.471 [main] INFO  r.example.taskweb.TaskWebApplication - Starting TaskWebApplication using Java 17.0.6 on DESKTOP-LMPC2N5 with PID 3424 (C:\Users\User\IdeaProjects\TaskWeb\target\classes started by User in C:\Users\User\IdeaProjects\TaskWeb)
+11:20:30.472 [main] INFO  r.example.taskweb.TaskWebApplication - No active profile set, falling back to 1 default profile: "default"
+11:20:40.119 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:20:40.328 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 180 ms. Found 5 JPA repository interfaces.
+11:20:42.016 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:20:42.078 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:20:42.081 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:20:42.082 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+11:20:42.328 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:20:42.328 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10807 ms
+11:20:42.975 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:20:43.234 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+11:20:43.828 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:20:44.231 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:20:45.138 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:20:45.257 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+11:20:48.659 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:20:48.699 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:20:51.411 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46573cfe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ead0b51, org.springframework.security.web.context.SecurityContextPersistenceFilter@8f8717b, org.springframework.security.web.header.HeaderWriterFilter@51a5a8ba, org.springframework.security.web.csrf.CsrfFilter@2c7aba7c, org.springframework.security.web.authentication.logout.LogoutFilter@145ef9e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ab2e887, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e9f48d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b9d602c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f7d8a7c, org.springframework.security.web.session.SessionManagementFilter@404566e7, org.springframework.security.web.access.ExceptionTranslationFilter@74844f8a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4be5b9b1]
+11:20:51.478 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:20:51.832 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11:20:52.800 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+11:20:52.845 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:20:52.904 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:20:52.959 [main] INFO  r.example.taskweb.TaskWebApplication - Started TaskWebApplication in 28.445 seconds (JVM running for 41.276)
+11:20:53.583 [RMI TCP Connection(3)-10.243.55.7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:20:53.584 [RMI TCP Connection(3)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:20:53.586 [RMI TCP Connection(3)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11:21:02.542 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:21:15.221 [http-nio-8080-exec-8] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:25:19.684 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:25:19.714 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:25:19.727 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:25:35.351 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+11:25:35.391 [main] INFO  r.example.taskweb.TaskWebApplication - Starting TaskWebApplication using Java 17.0.6 on DESKTOP-LMPC2N5 with PID 10236 (C:\Users\User\IdeaProjects\TaskWeb\target\classes started by User in C:\Users\User\IdeaProjects\TaskWeb)
+11:25:35.392 [main] INFO  r.example.taskweb.TaskWebApplication - No active profile set, falling back to 1 default profile: "default"
+11:25:36.864 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:25:36.974 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94 ms. Found 5 JPA repository interfaces.
+11:25:37.575 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:25:37.582 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:25:37.584 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:25:37.584 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+11:25:37.697 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:25:37.697 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2237 ms
+11:25:37.961 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:25:38.032 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+11:25:38.237 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:25:38.382 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:25:38.859 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:25:38.904 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+11:25:39.821 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:25:39.831 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:25:40.442 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f08c343, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fba492e, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a0881f1, org.springframework.security.web.header.HeaderWriterFilter@13087c75, org.springframework.security.web.csrf.CsrfFilter@112a50a1, org.springframework.security.web.authentication.logout.LogoutFilter@74844f8a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46c19350, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ecbfba1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@739be7ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6eeeb9da, org.springframework.security.web.session.SessionManagementFilter@1fa24e7, org.springframework.security.web.access.ExceptionTranslationFilter@37c762aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@147c4523]
+11:25:40.493 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:25:40.634 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11:25:40.999 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+11:25:41.031 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:25:41.050 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:25:41.067 [main] INFO  r.example.taskweb.TaskWebApplication - Started TaskWebApplication in 6.228 seconds (JVM running for 7.198)
+11:25:41.288 [RMI TCP Connection(4)-10.243.55.7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:25:41.289 [RMI TCP Connection(4)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:25:41.294 [RMI TCP Connection(4)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+11:36:50.296 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:36:50.300 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:36:50.302 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:37:03.037 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+11:37:03.076 [main] INFO  r.example.taskweb.TaskWebApplication - Starting TaskWebApplication using Java 17.0.6 on DESKTOP-LMPC2N5 with PID 15548 (C:\Users\User\IdeaProjects\TaskWeb\target\classes started by User in C:\Users\User\IdeaProjects\TaskWeb)
+11:37:03.080 [main] INFO  r.example.taskweb.TaskWebApplication - No active profile set, falling back to 1 default profile: "default"
+11:37:04.723 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:37:04.810 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 5 JPA repository interfaces.
+11:37:05.431 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:37:05.439 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:37:05.440 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:37:05.441 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+11:37:05.572 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:37:05.572 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2427 ms
+11:37:05.896 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:37:05.961 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+11:37:06.167 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:37:06.275 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:37:06.544 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:37:06.578 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+11:37:07.453 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:37:07.467 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:37:08.113 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f08c343, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fba492e, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a0881f1, org.springframework.security.web.header.HeaderWriterFilter@13087c75, org.springframework.security.web.csrf.CsrfFilter@112a50a1, org.springframework.security.web.authentication.logout.LogoutFilter@74844f8a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46c19350, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ecbfba1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@739be7ec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6eeeb9da, org.springframework.security.web.session.SessionManagementFilter@1fa24e7, org.springframework.security.web.access.ExceptionTranslationFilter@37c762aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@147c4523]
+11:37:08.162 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:37:08.324 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11:37:08.702 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+11:37:08.735 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:37:08.762 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:37:08.782 [main] INFO  r.example.taskweb.TaskWebApplication - Started TaskWebApplication in 6.263 seconds (JVM running for 7.375)
+11:37:09.347 [RMI TCP Connection(2)-10.243.55.7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:37:09.348 [RMI TCP Connection(2)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:37:09.351 [RMI TCP Connection(2)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11:37:28.456 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:37:29.453 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:37:31.498 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_USER" admin@mail.ru
+11:37:31.585 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - Роль "ROLE_USER" успешно выдана администратором admin@mail.ru
+11:37:31.599 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:37:32.170 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_READ" admin@mail.ru
+11:37:32.180 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - Роль "ROLE_READ" успешно выдана администратором admin@mail.ru
+11:37:32.187 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:37:33.202 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_USER" admin@mail.ru
+11:37:33.210 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - Роль "ROLE_USER" успешно выдана администратором admin@mail.ru
+11:37:33.220 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:37:33.627 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_ADMIN" admin@mail.ru
+11:37:33.636 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - Роль "ROLE_ADMIN" успешно выдана администратором admin@mail.ru
+11:37:33.648 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:37:35.398 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_READ" admin@mail.ru
+11:37:35.404 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Роль "ROLE_READ" успешно выдана администратором admin@mail.ru
+11:37:35.414 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:37:35.781 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_USER" admin@mail.ru
+11:37:35.788 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - Роль "ROLE_USER" успешно выдана администратором admin@mail.ru
+11:37:35.799 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:37:36.237 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_ADMIN" admin@mail.ru
+11:37:36.250 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - Роль "ROLE_ADMIN" успешно выдана администратором admin@mail.ru
+11:37:36.259 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:37:37.319 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - /list -> connection
+11:37:38.803 [http-nio-8080-exec-5] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:37:40.114 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - /list -> connection
+11:37:40.703 [http-nio-8080-exec-7] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:37:41.423 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - /list -> connection
+11:37:41.859 [http-nio-8080-exec-9] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:38:05.348 [http-nio-8080-exec-2] INFO  r.e.t.controller.ReleaseController - Удаление релиза администратором
+11:38:05.359 [http-nio-8080-exec-2] INFO  r.e.t.controller.ReleaseController - Релиз удален администратором
+11:38:05.371 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'taskId' for method parameter type Long is not present]
+11:38:07.285 [http-nio-8080-exec-5] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:38:09.147 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:38:11.405 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - /list -> connection
+11:38:12.469 [http-nio-8080-exec-8] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:38:12.998 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - /list -> connection
+11:38:13.838 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Удаление задачи администратором
+11:38:13.848 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Задача удалена администратором
+11:38:13.855 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:38:15.124 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - /list -> connection
+11:38:15.990 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:38:18.265 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:38:18.267 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:38:18.269 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:38:25.696 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+11:38:25.752 [main] INFO  r.example.taskweb.TaskWebApplication - Starting TaskWebApplication using Java 17.0.6 on DESKTOP-LMPC2N5 with PID 10300 (C:\Users\User\IdeaProjects\TaskWeb\target\classes started by User in C:\Users\User\IdeaProjects\TaskWeb)
+11:38:25.753 [main] INFO  r.example.taskweb.TaskWebApplication - No active profile set, falling back to 1 default profile: "default"
+11:38:27.331 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:38:27.491 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 140 ms. Found 5 JPA repository interfaces.
+11:38:28.242 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:38:28.256 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:38:28.258 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:38:28.258 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+11:38:28.419 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:38:28.419 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2585 ms
+11:38:28.767 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:38:28.837 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+11:38:29.084 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:38:29.217 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:38:29.499 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:38:29.542 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+11:38:30.298 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:38:30.307 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:38:31.429 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3333245e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@147c4523, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b5a04b0, org.springframework.security.web.header.HeaderWriterFilter@2b441609, org.springframework.security.web.csrf.CsrfFilter@73c6ae15, org.springframework.security.web.authentication.logout.LogoutFilter@1387bd84, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7c0b792e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b78a946, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37c762aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@551725e4, org.springframework.security.web.session.SessionManagementFilter@4a3404fa, org.springframework.security.web.access.ExceptionTranslationFilter@118f2486, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3677c508]
+11:38:31.500 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:38:31.750 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11:38:32.249 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+11:38:32.281 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:38:32.309 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:38:32.328 [main] INFO  r.example.taskweb.TaskWebApplication - Started TaskWebApplication in 7.215 seconds (JVM running for 8.462)
+11:38:32.899 [RMI TCP Connection(1)-10.243.55.7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:38:32.899 [RMI TCP Connection(1)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:38:32.902 [RMI TCP Connection(1)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+11:39:03.197 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:39:04.131 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - /list -> connection
+11:39:04.756 [http-nio-8080-exec-6] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:39:05.401 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - /list -> connection
+11:39:16.308 [http-nio-8080-exec-1] INFO  r.e.t.controller.ReleaseController - Добавление релиза пользователем - admin@mail.ru
+11:39:16.324 [http-nio-8080-exec-1] INFO  r.e.t.controller.ReleaseController - Релиз добавлен пользователем - admin@mail.ru
+11:39:16.335 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - /list -> connection
+11:39:17.802 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:39:18.908 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - /list -> connection
+11:39:20.745 [http-nio-8080-exec-7] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:39:21.441 [http-nio-8080-exec-8] INFO  r.e.t.controller.ReleaseController - Удаление релиза администратором
+11:39:21.463 [http-nio-8080-exec-8] INFO  r.e.t.controller.ReleaseController - Релиз удален администратором
+11:39:21.471 [http-nio-8080-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'taskId' for method parameter type Long is not present]
+11:41:52.765 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:41:52.769 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:41:52.772 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:42:02.161 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+11:42:02.241 [main] INFO  r.example.taskweb.TaskWebApplication - Starting TaskWebApplication using Java 17.0.6 on DESKTOP-LMPC2N5 with PID 2056 (C:\Users\User\IdeaProjects\TaskWeb\target\classes started by User in C:\Users\User\IdeaProjects\TaskWeb)
+11:42:02.246 [main] INFO  r.example.taskweb.TaskWebApplication - No active profile set, falling back to 1 default profile: "default"
+11:42:05.164 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:42:05.564 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 219 ms. Found 5 JPA repository interfaces.
+11:42:06.584 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:42:06.595 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:42:06.597 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:42:06.597 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+11:42:06.777 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:42:06.777 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4443 ms
+11:42:07.046 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:42:07.094 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+11:42:07.380 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:42:07.512 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:42:08.091 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:42:08.164 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+11:42:09.672 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:42:09.694 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:42:10.467 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7bc4ac3e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@504274c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@407d2a01, org.springframework.security.web.header.HeaderWriterFilter@2c7aba7c, org.springframework.security.web.csrf.CsrfFilter@4a3404fa, org.springframework.security.web.authentication.logout.LogoutFilter@30a5a58d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15ea0ca3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1387bd84, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3881b884, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16e5c19f, org.springframework.security.web.session.SessionManagementFilter@a319a2e, org.springframework.security.web.access.ExceptionTranslationFilter@1df2e767, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6eeeb9da]
+11:42:10.539 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:42:10.779 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11:42:11.324 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+11:42:11.400 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:42:11.435 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:42:11.468 [main] INFO  r.example.taskweb.TaskWebApplication - Started TaskWebApplication in 9.923 seconds (JVM running for 11.055)
+11:42:11.901 [RMI TCP Connection(8)-10.243.55.7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:42:11.901 [RMI TCP Connection(8)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:42:11.903 [RMI TCP Connection(8)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+11:42:19.594 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'taskId' for method parameter type Long is not present]
+11:42:23.397 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:42:24.931 [http-nio-8080-exec-7] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:42:25.877 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - /list -> connection
+11:42:37.020 [http-nio-8080-exec-10] INFO  r.e.t.controller.ReleaseController - Добавление релиза пользователем - admin@mail.ru
+11:42:37.037 [http-nio-8080-exec-10] INFO  r.e.t.controller.ReleaseController - Релиз добавлен пользователем - admin@mail.ru
+11:42:37.048 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - /list -> connection
+11:42:38.523 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:42:39.406 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - /list -> connection
+11:42:41.256 [http-nio-8080-exec-4] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:42:44.139 [http-nio-8080-exec-5] INFO  r.e.t.controller.ReleaseController - Удаление релиза администратором
+11:42:44.157 [http-nio-8080-exec-5] INFO  r.e.t.controller.ReleaseController - Релиз удален администратором
+11:42:44.167 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:42:45.699 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - /list -> connection
+11:42:46.716 [http-nio-8080-exec-8] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:42:47.583 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - /list -> connection
+11:42:48.314 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:42:50.920 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:42:54.730 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_READ" admin@mail.ru
+11:42:54.752 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - Роль "ROLE_READ" успешно выдана администратором admin@mail.ru
+11:42:54.763 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:42:55.329 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_ADMIN" admin@mail.ru
+11:42:55.336 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Роль "ROLE_ADMIN" успешно выдана администратором admin@mail.ru
+11:42:55.343 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:42:56.324 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - /list -> connection
+11:42:58.228 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - /list -> connection
+11:42:59.035 [http-nio-8080-exec-9] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:42:59.703 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - /list -> connection
+11:43:00.751 [http-nio-8080-exec-3] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:43:01.095 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:43:05.611 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:43:35.640 [http-nio-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'userEmail' for method parameter type String is not present]
+11:43:42.375 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:43:45.715 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - /list -> connection
+11:43:47.048 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:43:49.246 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - /list -> connection
+11:43:51.348 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:43:53.319 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:44:51.436 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:44:51.440 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:44:51.443 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:45:01.861 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+11:45:01.894 [main] INFO  r.example.taskweb.TaskWebApplication - Starting TaskWebApplication using Java 17.0.6 on DESKTOP-LMPC2N5 with PID 8512 (C:\Users\User\IdeaProjects\TaskWeb\target\classes started by User in C:\Users\User\IdeaProjects\TaskWeb)
+11:45:01.895 [main] INFO  r.example.taskweb.TaskWebApplication - No active profile set, falling back to 1 default profile: "default"
+11:45:03.267 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:45:03.341 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 5 JPA repository interfaces.
+11:45:03.951 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:45:03.958 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:45:03.959 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:45:03.960 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+11:45:04.088 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+11:45:04.088 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2134 ms
+11:45:04.352 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+11:45:04.399 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+11:45:04.568 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:45:04.667 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:45:05.028 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:45:05.085 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+11:45:05.917 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:45:05.930 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:45:06.788 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@504274c1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16e5c19f, org.springframework.security.web.context.SecurityContextPersistenceFilter@461b38ca, org.springframework.security.web.header.HeaderWriterFilter@729c98, org.springframework.security.web.csrf.CsrfFilter@3fb4beb1, org.springframework.security.web.authentication.logout.LogoutFilter@59cb10e0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f3a92fd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3881b884, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1185b0b7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59263f7b, org.springframework.security.web.session.SessionManagementFilter@2daf0cc9, org.springframework.security.web.access.ExceptionTranslationFilter@4d0d568f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17635531]
+11:45:06.848 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:45:07.041 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11:45:07.589 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+11:45:07.646 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:45:07.703 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+11:45:07.778 [main] INFO  r.example.taskweb.TaskWebApplication - Started TaskWebApplication in 6.47 seconds (JVM running for 7.43)
+11:45:08.358 [RMI TCP Connection(1)-10.243.55.7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:45:08.359 [RMI TCP Connection(1)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:45:08.363 [RMI TCP Connection(1)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+11:45:14.474 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:45:17.068 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - /list -> connection
+11:45:20.347 [http-nio-8080-exec-1] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+11:45:21.238 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - /list -> connection
+11:45:21.684 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:45:30.422 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:45:31.075 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - /list -> connection
+11:46:54.902 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Список всех пользователей
+11:55:34.058 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+11:55:34.061 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:55:34.062 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12:22:11.616 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+12:22:11.626 [main] INFO  r.example.taskweb.TaskWebApplication - Starting TaskWebApplication using Java 17.0.6 on DESKTOP-LMPC2N5 with PID 10420 (C:\Users\User\IdeaProjects\TaskWeb\target\classes started by User in C:\Users\User\IdeaProjects\TaskWeb)
+12:22:11.636 [main] INFO  r.example.taskweb.TaskWebApplication - No active profile set, falling back to 1 default profile: "default"
+12:22:14.300 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12:22:14.448 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 5 JPA repository interfaces.
+12:22:15.928 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+12:22:15.938 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+12:22:15.941 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:22:15.941 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+12:22:16.097 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:22:16.097 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4357 ms
+12:22:16.909 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12:22:17.012 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+12:22:17.500 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+12:22:17.767 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12:22:18.622 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12:22:18.707 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+12:22:19.920 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+12:22:19.931 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12:22:20.809 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4be5b9b1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ad80cf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@28b4b10e, org.springframework.security.web.header.HeaderWriterFilter@ec70725, org.springframework.security.web.csrf.CsrfFilter@1fa24e7, org.springframework.security.web.authentication.logout.LogoutFilter@63c88994, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7cab8d52, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74844f8a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c945ee7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e212f46, org.springframework.security.web.session.SessionManagementFilter@15f229e8, org.springframework.security.web.access.ExceptionTranslationFilter@3881b884, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@504274c1]
+12:22:20.865 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+12:22:21.048 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12:22:21.673 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 13 endpoint(s) beneath base path '/actuator'
+12:22:21.711 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+12:22:21.772 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+12:22:21.822 [main] INFO  r.example.taskweb.TaskWebApplication - Started TaskWebApplication in 13.894 seconds (JVM running for 29.385)
+12:22:22.379 [RMI TCP Connection(2)-10.243.55.7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:22:22.379 [RMI TCP Connection(2)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:22:22.382 [RMI TCP Connection(2)-10.243.55.7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+12:23:09.292 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:23:19.290 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - /list -> connection
+12:23:21.857 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - Редактирование задачи
+12:23:25.390 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Добавление задачи пользователем - admin@mail.ru
+12:23:25.431 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Задача добалена пользователем - admin@mail.ru
+12:23:25.440 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - /list -> connection
+12:23:26.995 [http-nio-8080-exec-3] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:23:28.100 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - /list -> connection
+12:23:41.252 [http-nio-8080-exec-6] INFO  r.e.t.controller.ReleaseController - Добавление релиза пользователем - admin@mail.ru
+12:23:41.266 [http-nio-8080-exec-6] INFO  r.e.t.controller.ReleaseController - Релиз добавлен пользователем - admin@mail.ru
+12:23:41.274 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - /list -> connection
+12:23:42.967 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - Редактирование задачи
+12:23:48.579 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - /list -> connection
+12:23:50.037 [http-nio-8080-exec-10] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:23:55.425 [http-nio-8080-exec-2] INFO  r.e.t.controller.ReleaseController - Добавление релиза пользователем - admin@mail.ru
+12:23:55.431 [http-nio-8080-exec-2] INFO  r.e.t.controller.ReleaseController - Релиз добавлен пользователем - admin@mail.ru
+12:23:55.440 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - /list -> connection
+12:23:56.714 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Редактирование задачи
+12:23:57.926 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - /list -> connection
+12:23:58.415 [http-nio-8080-exec-6] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:01.384 [http-nio-8080-exec-8] INFO  r.e.t.controller.ReleaseController - Добавление релиза пользователем - admin@mail.ru
+12:24:01.409 [http-nio-8080-exec-8] INFO  r.e.t.controller.ReleaseController - Релиз добавлен пользователем - admin@mail.ru
+12:24:01.416 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:03.788 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:05.524 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:06.408 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:07.060 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:07.465 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:07.966 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:08.424 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:08.777 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:09.485 [http-nio-8080-exec-9] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:11.143 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:11.965 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:13.677 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:14.866 [http-nio-8080-exec-3] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:15.814 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:16.093 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:16.794 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:17.295 [http-nio-8080-exec-7] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:17.975 [http-nio-8080-exec-8] INFO  r.e.t.controller.ReleaseController - Удаление релиза администратором
+12:24:17.985 [http-nio-8080-exec-8] INFO  r.e.t.controller.ReleaseController - Релиз удален администратором
+12:24:17.998 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:18.792 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:19.312 [http-nio-8080-exec-1] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:20.006 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:20.968 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - Удаление задачи администратором
+12:24:20.981 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - Задача удалена администратором
+12:24:20.992 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:21.881 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:22.536 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:23.253 [http-nio-8080-exec-7] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:27.591 [http-nio-8080-exec-8] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:32.759 [http-nio-8080-exec-9] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:38.490 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:39.829 [http-nio-8080-exec-1] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:40.411 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:44.483 [http-nio-8080-exec-3] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:45.108 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - /list -> connection
+12:24:45.707 [http-nio-8080-exec-5] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:24:47.274 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:49.994 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_USER" admin@mail.ru
+12:24:50.012 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - Роль "ROLE_USER" успешно выдана администратором admin@mail.ru
+12:24:50.019 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:50.557 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_ADMIN" admin@mail.ru
+12:24:50.563 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - Роль "ROLE_ADMIN" успешно выдана администратором admin@mail.ru
+12:24:50.569 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:51.263 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_READ" admin@mail.ru
+12:24:51.316 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Роль "ROLE_READ" успешно выдана администратором admin@mail.ru
+12:24:51.328 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:51.844 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_ADMIN" admin@mail.ru
+12:24:51.849 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - Роль "ROLE_ADMIN" успешно выдана администратором admin@mail.ru
+12:24:51.857 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:52.331 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_USER" admin@mail.ru
+12:24:52.336 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Роль "ROLE_USER" успешно выдана администратором admin@mail.ru
+12:24:52.349 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:24:58.895 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:25:05.719 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - /list -> connection
+12:25:15.352 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - /list -> connection
+12:25:16.463 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - /list -> connection
+12:25:17.447 [http-nio-8080-exec-10] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:25:18.443 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - /list -> connection
+12:25:20.471 [http-nio-8080-exec-3] INFO  r.e.t.controller.TaskController - /list -> connection
+12:25:27.210 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - /list -> connection
+12:25:28.885 [http-nio-8080-exec-9] INFO  r.e.t.controller.TaskController - /list -> connection
+12:25:29.162 [http-nio-8080-exec-10] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:25:44.707 [http-nio-8080-exec-1] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:26:12.912 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:26:27.579 [http-nio-8080-exec-7] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:26:28.197 [http-nio-8080-exec-8] INFO  r.e.t.controller.TaskController - /list -> connection
+12:26:28.575 [http-nio-8080-exec-9] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:26:28.851 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - /list -> connection
+12:26:29.103 [http-nio-8080-exec-1] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:26:29.430 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - /list -> connection
+12:26:29.710 [http-nio-8080-exec-3] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:26:30.099 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - /list -> connection
+12:26:32.335 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - /list -> connection
+12:26:37.183 [http-nio-8080-exec-10] INFO  r.e.t.controller.TaskController - /list -> connection
+12:26:37.799 [http-nio-8080-exec-1] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:26:38.502 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - /list -> connection
+12:26:40.457 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - /list -> connection
+12:26:44.465 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - /list -> connection
+12:26:51.768 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:26:53.269 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Выдача роли "ROLE_READ" admin@mail.ru
+12:26:53.282 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Роль "ROLE_READ" успешно выдана администратором admin@mail.ru
+12:26:53.290 [http-nio-8080-exec-6] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:27:03.084 [http-nio-8080-exec-3] INFO  r.e.t.controller.ReleaseController - /list/releases -> connection
+12:27:03.818 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - /list -> connection
+12:27:04.842 [http-nio-8080-exec-7] INFO  r.e.t.controller.TaskController - /list -> connection
+12:27:09.673 [http-nio-8080-exec-2] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:27:10.642 [http-nio-8080-exec-4] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:27:14.196 [http-nio-8080-exec-5] INFO  r.e.t.controller.TaskController - Список всех пользователей
+12:27:25.644 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12:27:25.660 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:27:25.662 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

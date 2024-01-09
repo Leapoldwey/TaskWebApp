@@ -3,7 +3,6 @@ package ru.example.taskweb.service;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import ru.example.taskweb.dto.UserDto;
@@ -21,9 +20,9 @@ import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
-    private PasswordEncoder passwordEncoder;
-    private RoleRepository roleRepository;
-    private UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+    private final RoleRepository roleRepository;
+    private final UserRepository userRepository;
 
     public UserServiceImpl(PasswordEncoder passwordEncoder, RoleRepository roleRepository,
                            UserRepository userRepository) {
@@ -59,44 +58,38 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void giveAdminRole(@RequestParam String email, ModelAndView mav, BindingResult bindingResult) {
+    public void giveAdminRole(@RequestParam String email, ModelAndView mav) {
         User user = userRepository.findByEmail(email);
         Role roleAdmin = roleRepository.findByName("ROLE_ADMIN");
         if (user != null && roleAdmin != null) {
             user.setRoles(new ArrayList<>(Collections.singletonList(roleAdmin)));
         } else {
-            bindingResult.rejectValue("error", "error", "Невозможно присвоить роль." +
-                    " Пользователь или роль не найдены.");
-            mav.setViewName("add-remainingTime-form");
-            mav.addObject("error", "Ошибка при вычислении оставшегося времени.");
+            mav.setViewName("/users");
+            System.out.println("Невозможно присвоить роль");
         }
         userRepository.save(user);
     }
     @Override
-    public void giveUserRole(@RequestParam String email, ModelAndView mav, BindingResult bindingResult) {
+    public void giveUserRole(@RequestParam String email, ModelAndView mav) {
         User user = userRepository.findByEmail(email);
         Role roleUser = roleRepository.findByName("ROLE_USER");
         if (user != null && roleUser != null) {
             user.setRoles(new ArrayList<>(Collections.singletonList(roleUser)));
         } else {
-            bindingResult.rejectValue("error", "error", "Невозможно присвоить роль." +
-                    " Пользователь или роль не найдены.");
-            mav.setViewName("add-remainingTime-form");
-            mav.addObject("error", "Ошибка при вычислении оставшегося времени.");
+            mav.setViewName("/users");
+            System.out.println("Невозможно присвоить роль");
         }
         userRepository.save(user);
     }
     @Override
-    public void giveReadRole(@RequestParam String email, ModelAndView mav, BindingResult bindingResult) {
+    public void giveReadRole(@RequestParam String email, ModelAndView mav) {
         User user = userRepository.findByEmail(email);
         Role roleRead = roleRepository.findByName("ROLE_READ");
         if (user != null && roleRead != null) {
             user.setRoles(new ArrayList<>(Collections.singletonList(roleRead)));
         } else {
-            bindingResult.rejectValue("error", "error", "Невозможно присвоить роль." +
-                    " Пользователь или роль не найдены.");
-            mav.setViewName("add-remainingTime-form");
-            mav.addObject("error", "Ошибка при вычислении оставшегося времени.");
+            mav.setViewName("/users");
+            System.out.println("Невозможно присвоить роль");
         }
         userRepository.save(user);
     }
@@ -111,8 +104,7 @@ public class UserServiceImpl implements UserService {
             try {
                 userRepository.delete(user);
             } catch (Exception e) {
-                model.addAttribute("error", "Ошибка при удалении пользователя: "
-                        + e.getMessage());
+                System.err.println("Ошибка при удалении пользователя " + e.getMessage());
             }
         }
     }

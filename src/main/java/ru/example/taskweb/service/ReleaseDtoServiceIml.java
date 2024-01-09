@@ -1,11 +1,9 @@
 package ru.example.taskweb.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.example.taskweb.dto.ReleaseDto;
 import ru.example.taskweb.entity.Release;
 import ru.example.taskweb.entity.User;
-import ru.example.taskweb.repository.ReleaseRepository;
 
 import java.util.Optional;
 @Service

@@ -10,7 +10,6 @@ import ru.example.taskweb.entity.User;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 import java.time.LocalDate;
 
 @Setter

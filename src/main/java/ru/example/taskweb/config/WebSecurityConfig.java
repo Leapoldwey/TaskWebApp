@@ -26,7 +26,7 @@ public class WebSecurityConfig {
                 .antMatchers("/aboutApp").permitAll()
                 .antMatchers("/users", "/users/listTasksForAdmin",
                         "/users/listReleasesForAdmin", "/deleteReleaseByAdmin",
-                "/deleteTaskByAdmin", "http://localhost:8080/showLogs").hasRole("ADMIN")
+                "/deleteTaskByAdmin", "/showLogs").hasRole("ADMIN")
                 .antMatchers("/addReleaseForm", "/addTaskForm").hasAnyRole("ADMIN", "USER")
                 .anyRequest().authenticated()
                 .and()

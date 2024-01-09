@@ -4,11 +4,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-import ru.example.taskweb.entity.Role;
 import ru.example.taskweb.entity.Task;
 import ru.example.taskweb.entity.User;
 import ru.example.taskweb.repository.TaskRepository;
@@ -17,8 +18,6 @@ import ru.example.taskweb.service.UserService;
 
 import javax.validation.Valid;
 import java.security.Principal;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
 
@@ -55,22 +54,16 @@ public class TaskController {
     }
 
     @GetMapping("/users/listTasksForAdmin")
-    public ModelAndView getTasksForAdmin(@RequestParam String userEmail, Principal principal) {
+    public ModelAndView getTasksForAdmin(@RequestParam String userEmail) {
         log.info("/list -> connection");
         ModelAndView mav = new ModelAndView("/list-tasks-for-admin");
-        User currentUser = userService.findByEmail(principal.getName());
-        String roleAdmin = currentUser.getRoles().stream()
-                .map(role -> role.getName())
-                .filter(nameRole -> nameRole.equals("ROLE_ADMIN"))
-                .findFirst()
-                .orElse("null");
 
         User findByEmail = userService.findByEmail(userEmail);
-        if (roleAdmin.equals("ROLE_ADMIN")) {
-            List<Task> tasks = taskRepository.findByUserId(findByEmail.getId());
-            mav.addObject("tasks", tasks);
-            mav.addObject("username", userEmail);
-        }
+
+        List<Task> tasks = taskRepository.findByUserId(findByEmail.getId());
+
+        mav.addObject("tasks", tasks);
+        mav.addObject("username", userEmail);
         return mav;
     }
 

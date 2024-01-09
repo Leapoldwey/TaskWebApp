@@ -75,7 +75,7 @@ public class ReleaseController {
     }
 
     @GetMapping("addReleaseForm")
-    public ModelAndView addReleaseForm(@RequestParam Long taskId, Principal principal) {
+    public ModelAndView addReleaseForm(@RequestParam Long taskId) {
         ModelAndView mav = new ModelAndView("add-release-form");
 
         ReleaseDto releaseDto = new ReleaseDto();
@@ -98,7 +98,7 @@ public class ReleaseController {
         Release release;
         if (releaseDto.getId() != null) {
             release = releaseRepository.findById(releaseDto.getId())
-                    .orElseThrow(() -> new RuntimeException("Release not found"));
+                    .orElseThrow(() -> new RuntimeException("Релиз не найден"));
         } else {
             release = new Release();
         }
@@ -106,7 +106,7 @@ public class ReleaseController {
         releaseDtoService.setRelease(releaseDto, release, currencyUser);
 
         Task task = taskRepository.findById(releaseDto.getTaskId())
-                .orElseThrow(() -> new RuntimeException("Task not found"));
+                .orElseThrow(() -> new RuntimeException("Задача не найдена"));
         release.setTask(task);
 
         releaseRepository.save(release);
@@ -146,7 +146,7 @@ public class ReleaseController {
     }
 
     @GetMapping("/deleteRelease")
-    public String deleteRelease(@RequestParam Long releaseId, Principal principal) {
+    public String deleteRelease(@RequestParam Long releaseId) {
         releaseRepository.deleteById(releaseId);
         return "redirect:/list/releases";
     }
@@ -160,6 +160,6 @@ public class ReleaseController {
 
         log.info("Релиз удален администратором");
         userActionService.writeLog("Релиз удален администратором", principal);
-        return "redirect:/users/listReleasesForAdmin";
+        return "redirect:/users";
     }
 }
